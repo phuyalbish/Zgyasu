@@ -1,0 +1,189 @@
+*{
+  padding:0px;
+  box-sizing:border-box;
+  margin:0px;
+}
+body{
+  width:100%;
+  height:auto;
+}
+
+.dialog_container{
+  padding-bottom: 30px;
+}
+.dialog_container h1{
+  font-family: 'Be Vietnam Pro';
+  font-size: 70px;
+  font-weight: 900;
+  color: #222;
+  text-align: center;
+}
+
+.dialog_container p, .group_descripton_link{
+  font-family: 'Be Vietnam Pro';
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  text-decoration: none;
+  padding:20px;
+}
+.group_description_buttons{
+  text-align: center;
+}
+
+.square_view_description_body {
+  border: 15px solid #4f4a41b8;
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  top: 550px;
+  left: 40%;
+}
+
+.grid_view_description_body {
+  height:690px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-row-gap: 5%;
+  grid-column-gap: 5%;
+  padding-bottom: 100px;
+}
+
+.group_description_box, .group_description_box_inner_outer {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.group_description_button {
+ 
+  padding:20px 30px;
+  background-color: #4F4A41;
+  outline: none;
+  color: #fff;
+  border: 2px solid #4F4A41;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.group_description_button:hover {
+  background-color: transparent;
+  border: 2px solid #4F4A41;
+  color: #000;
+}
+
+.group_description_button_join {
+  position: absolute;
+  bottom: 15%;
+  left: 30%;
+}
+
+.group_description_button_create {
+  position: relative;
+  top: 20%;
+  left: 15%;
+}
+
+.group_description_desc {
+  color: #3b3b3b;
+}
+
+.group_description_desc_create {
+  position: absolute;
+  bottom: 0%;
+}
+
+.group_video_outer {
+  width: 400px;
+  float: left;
+  margin-right: 30px;
+}
+
+.group_description_desc_outer {
+  position: relative;
+  margin-top: 100px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.group_video_join , .group_video_create{
+  width:100%;
+  overflow: hidden;
+}
+.group_video img{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+
+/* Third box company photo grid box */
+.company_photo_grid{
+  background-color: #4F4A41;
+  display:grid;
+  grid-template-columns:  auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto;
+ text-align: center;
+  width:100%;
+  padding: 20px;
+  justify-content: center;
+
+}
+.company{
+  font-family: 'Vollkorn';
+  color:#fff;
+  background-color: #4F4A41;
+  position:relative;
+ padding:20px 7%;
+}
+
+.company_images{
+  width:70px;
+  height:65px;
+  margin: 7px 20px ;
+}
+
+.review_content{
+  width:86%;
+  margin:30px 7% 30px 7%;
+  padding:30px 0;
+}
+
+.review_content>h2{
+  color:#4f4a41;
+  font-family:'Vollkorn';
+  /* margin-left:7%; */
+}
+.reviews_box{
+  background-color:#666;
+  color:#fff;
+  font-weight: 100;
+  border-radius: 10px;
+  padding:5px;
+    font-size: 16px;
+    float:right;
+    width:auto;
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.reviews_box img{
+  margin-left:5px;
+  width:28px;
+}
+.inner_review_content{
+  display:grid;
+  grid-template-columns: auto auto;
+}
+.reviews_box{
+  margin:5px;
+}
+
+.alert{
+  background:rgba(34, 34, 34, 0.341);
+  padding:20px;
+  position: absolute;
+  margin-bottom: 20px;
+  z-index:4;
+}

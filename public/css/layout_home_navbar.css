@@ -1,0 +1,63 @@
+*{
+  
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+.innernavbar {
+  display: flex;
+  flex-direction: row;
+  padding:10px 2% 0 4%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index:1;
+}
+
+.logos{
+  width: 70px;
+  height:auto;
+}
+
+.div_buttons a{
+  margin-left:20px;
+}
+.fa-house{
+  font-size:20px;
+  color:#212c1E;
+}
+
+
+/* .div_buttons .div_buttons_styles {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #999999;
+}
+
+.div_buttons .learn_more {
+  font-size: 25px;
+} */
+.navbar_link{
+  text-decoration: none;
+  color:#212c1E;
+  font-family: 'Vollkorn';
+}
+.navbar_button{
+  padding:7px;
+  margin:2px;
+  background-color: #4F4A41;
+  outline: none;
+  color: #fff;
+  border: 2px solid #4F4A41;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 10px;
+}
+.navbar_button:hover {
+  padding:7px;
+  background-color: transparent;
+  color: #000;
+}
+
+/*# sourceMappingURL=home_navbar.css.map */

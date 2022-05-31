@@ -1,0 +1,60 @@
+body{
+  background-color: #EBFDFA;
+}
+.home_badge{
+    top:0px;
+    position:fixed;
+    overflow: hidden;
+    height:53vh;
+  }
+
+  .home_badge img{
+    
+    width:100vw;
+  }
+  
+.description_body{
+    position:relative;
+    background-color: #EBFDFA;
+    margin-bottom:47vh;
+    margin-top:46vh;
+    z-index: 2; 
+  }
+  
+
+  .inner_description_body {
+    width: 80%;
+    margin-left: 8%;
+    padding-top:30px;
+    padding-bottom: 100px;
+  }
+
+ .documentation{
+    font-family:'Vollkorn';
+    color:#3B423B;
+}
+
+
+
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #EBFDFA;  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3B423B;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #212c1E; 
+}
