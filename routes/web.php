@@ -32,6 +32,8 @@ Route::get('login', [UserController::class,'login'])->name('loginCheck');
 Route::get('signupinup', [HomeController::class,'SignInUp'])->name('home.signinup');
 
 
+
+
 //For Dashboard
 Route::prefix('dashboard')->middleware('ChecktheCookie')->group(function(){
 
@@ -39,6 +41,16 @@ Route::prefix('dashboard')->middleware('ChecktheCookie')->group(function(){
 });
 
 //For Developer
-Route::post('developer/login', [DeveloperController::class,'CmsLogin'])->name('developer.login');
-Route::get('developer/dashboard', [DeveloperController::class,'CMSDashboard'])->name('developer.dashboard');
+Route::prefix('developer')->middleware('ChecktheDeveloper')->group(function(){
+
+    Route::get('dashboard', [DeveloperController::class,'CMSDashboard'])->name('developer.dashboard');
+
+});
+
+Route::prefix('developer')->middleware('ChecktheDeveloperDashboard')->group(function(){
+    Route::get('login', [DeveloperController::class,'CmsLogin'])->name('developer.login');
+});
+
+Route::get('signout', [DeveloperController::class,'CmsSignOut'])->name('developer.signout');
+Route::post('developer/loginCheck', [DeveloperController::class,'CmsLoginCheck'])->name('developer.loginCheck');
 

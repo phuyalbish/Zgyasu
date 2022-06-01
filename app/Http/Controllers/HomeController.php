@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Server;
 class HomeController extends Controller
 {
     
@@ -17,9 +18,10 @@ class HomeController extends Controller
     }
     function LandingPage(){
 
-        $users = User:: all();
-        return view('home.landingpage',compact('users'));
-        // return view('home.landingpage');
+        $user_count = User:: all()->count();
+        $server_count = Server:: all()->count();
+
+        return view('home.landingpage',compact('user_count','server_count'));
     }
     function PrivacyPolicy(){
         return view('home.privacypolicy');

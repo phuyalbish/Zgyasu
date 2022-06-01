@@ -41,7 +41,6 @@ class UserController extends Controller
             'user_password' => 'required',
             'user_bio' => 'required',
         ]);
-        
         $userStore=new User();
         $userStore->user_username=$request->user_username;
         $userStore->user_fname=$request->user_fname;

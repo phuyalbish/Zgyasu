@@ -9,34 +9,37 @@ body{
 }
 
 .dialog_container{
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+  padding-left: 30px;
 }
 .dialog_container h1{
   font-family: 'Be Vietnam Pro';
   font-size: 70px;
   font-weight: 900;
   color: #222;
-  text-align: center;
 }
-
+#ques_style{
+  color:transparent;
+  -webkit-text-stroke: 1px #222;
+}
 .dialog_container p, .group_descripton_link{
   font-family: 'Be Vietnam Pro';
   font-size: 20px;
-  color: #666;
-  text-align: center;
+  color: #222;
   text-decoration: none;
   padding:20px;
 }
-.group_description_buttons{
-  text-align: center;
+.group_description_button_getstarted{
+  font-family: 'Be Vietnam Pro';
+  color: #222;
 }
 
 .square_view_description_body {
-  border: 15px solid #4f4a41b8;
+  border: 15px solid #212c1eba;
   width: 220px;
-  height: 220px;
+  height: 225px;
   position: absolute;
-  top: 550px;
+  top: 670px;
   left: 40%;
 }
 

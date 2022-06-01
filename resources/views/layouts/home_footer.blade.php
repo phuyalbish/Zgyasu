@@ -4,9 +4,24 @@
     @include('meta')
     <link rel="stylesheet" href="css/layout_home_footer.css">
     
+.scrollaction {
+  z-index:2;
+}
+</style>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            function myFunction() {
+            if (document.documentElement.scrollTop > 700) {
+                document.getElementById("scrollaction").style.zIndex = "1";
+            } else {
+                document.getElementById("scrollaction").style.zIndex = "0";
+            }
+            }
+        </script>
 </head>
 <body>
-<footer>
+<footer id="scrollaction">
     <div class="innerfooter">
         <div class="gridfooter">
             <div class="innercontainer innercontainer1">

@@ -11,11 +11,20 @@
     <title>Sign In CMS</title>
 </head>
 <body>
+
     <form action="{{route('developer.loginCheck')}}" method="post">
-        <input type="text" name="name" required="required" placeholder="Name">
-        <input type="password" name="password" required="required" placeholder="Password">
+    {{ csrf_field() }}
+        <input type="text" name="developer_uname" required="required" placeholder="Name">
+        <input type="password" name="developer_password" required="required" placeholder="Password">
         <input type="submit" value="Submit">
     </form>
+    
+			@if(isset($dev_err_login))
+			
+			<div class="deverrormessage">
+                    <p>{{$dev_err_login}}</p>
+			</div>
+                @endif
     
 </body>
 </html>

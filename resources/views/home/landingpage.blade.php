@@ -17,17 +17,16 @@
     @include('layouts.home_signinup')
     
     @include('layouts.home_navbar');
-    <div class="home_badge">
-        <!-- <video autoplay muted loop src="videos/video.mp4" width="100%" height="100%"></video> -->
-        <img src="images/landingvideo.jpg" alt="" srcset="">
+    <div class="home_badge2">
+        <video autoplay muted loop src="images/landingvideo2.mp4" style="position:relative; max-width:100vw;" ></video>
+        <!-- <img src="images/landingvideo.jpg" alt="" srcset=""> -->
     </div>
-    <div class="description_body">
-        
-        <div class="inner_description_body">
-            
-             <div class="dialog_container">
-                <h1>Ask Question, Get<br/>Answers</h1>
-                <p>20000 Users | 456 Groups</p>
+
+    <div class="description_body2">
+    <div class="dialog_container">
+                <h1>Ask <span id="ques_style">Question</span>,<br/>Get Answers</h1>
+                <p>{{$user_count}} Users | {{$server_count}} Servers</p>
+                <br>
                 <div class="group_description_buttons">
                     <a  href="{{route('dashboard.home')}}" class="group_description_button group_description_button_getstarted" id="opendashboard2" href="" >Open Dashboard</a>
                     <button onclick="openpopup()" class="group_description_button group_description_button_getstarted " id="getstarted2" >Get Started</button>
@@ -35,6 +34,12 @@
                 </div>
 
             </div>
+        <div class="inner_background2">
+            
+        <div class="inner_description_body">
+            
+             
+            <br>
             <div class="grid_view_description_body">
                 
                 <div class="group_video group_video_join">
@@ -111,23 +116,25 @@
             </div>
 
         </div>
+
+
         <br>
         <div class="group_description_box_outer">
-            <div class="group_video group_video_outer">
-                    <!-- <video autoplay muted loop src="videos/video.mp4" width="100%" height="100%"></video> -->\
-                    <img width="100%" src="images/landingvideo.jpg" alt="" srcset="">
+                <div class="group_video group_video_outer">
+                        <!-- <video autoplay muted loop src="videos/video.mp4" width="100%" height="100%"></video> -->\
+                        <img width="100%" src="images/landingvideo.jpg" alt="" srcset="">
 
-            </div>
-            <div class="group_description_box_inner_outer group_description_answer">
-        
-            <p class="group_description_desc group_description_desc_outer">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime? 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime? 
-            </p>
-            <a  href="{{route('dashboard.home')}}"  class="group_description_button group_description_button_answer " id="opendashboard7" opendashboard-option">Answer Question</a>
-            <button onclick="openpopup()" class="group_description_button group_description_button_answer" id="getstarted7" >Answer Question</button>
-        </div>   
-</div>
+                </div>
+                <div class="group_description_box_inner_outer group_description_answer">
+            
+                <p class="group_description_desc group_description_desc_outer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime? 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime? 
+                </p>
+                <a  href="{{route('dashboard.home')}}"  class="group_description_button group_description_button_answer " id="opendashboard7" opendashboard-option">Answer Question</a>
+                <button onclick="openpopup()" class="group_description_button group_description_button_answer" id="getstarted7" >Answer Question</button>
+            </div>   
+    </div>
 </div>
 <div class="company">
         <h2>Institute who trusted us:</h2>
@@ -186,12 +193,10 @@
                         </div>
                 </div>
             </div>
-
     </div>
+    </div>
+
     @include('layouts.home_footer');
-
-
-
     </div>
     
 </body>
