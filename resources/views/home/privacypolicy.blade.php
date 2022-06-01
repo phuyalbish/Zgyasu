@@ -3,6 +3,9 @@
 <head>
     @include('meta')
     <title>Zgyasu | Privacy Policy</title>
+    <script>
+        window.addEventListener('scroll', footerzIndex);
+    </script>
 </head>
 <body onload="ShowHideDashboardNav(
  @if(isset($_COOKIE['cookie_user'])) 1

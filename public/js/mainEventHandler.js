@@ -2,6 +2,8 @@
 function ShowHideDashboard(cookie=0){
 
     if(cookie == 1){
+
+        document.getElementById("landingpage_hide_nav").style.display = "none";
         document.getElementById('getstarted1').style.display = "none";
         document.getElementById('getstarted2').style.display = "none";
         document.getElementById('getstarted3').style.display = "none";
@@ -20,6 +22,8 @@ function ShowHideDashboard(cookie=0){
 
     }
     else{
+
+        document.getElementById("landingpage_hide_nav").style.display = "none";
         document.getElementById('opendashboard1').style.display = "none";
         document.getElementById('opendashboard2').style.display = "none";
         document.getElementById('opendashboard3').style.display = "none";
@@ -59,5 +63,10 @@ function openpopup(){
     document.getElementById('signinpopup').style.display = "block";
 }
 
-
-
+function footerzIndex() {
+    if (document.documentElement.scrollTop > 420) {
+        document.getElementById("scrollaction").style.zIndex = "2";
+    } else {
+        document.getElementById("scrollaction").style.zIndex = "0";
+    }
+}

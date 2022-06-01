@@ -29,9 +29,9 @@ body{
 .description_body{
   position:relative;
   background-color: #EBFDFA;
-  margin-bottom:50vh;
+  margin-bottom:53vh;
   margin-top:46vh;
-  z-index: 2; 
+  z-index: 3; 
 }
 
 

@@ -20,7 +20,11 @@
   height:auto;
 }
 
+#landingpage_hide_nav{
+  display:block;
+}
 .div_buttons a{
+  font-family: 'Be Vietnam Pro';
   margin-left:20px;
 }
 .fa-house{
@@ -44,7 +48,7 @@
   font-family: 'Vollkorn';
 }
 .navbar_button{
-  padding:7px;
+  padding:15px;
   margin:2px;
   background-color: #4F4A41;
   outline: none;
@@ -55,7 +59,7 @@
   border-radius: 10px;
 }
 .navbar_button:hover {
-  padding:7px;
+  padding:15px;
   background-color: transparent;
   color: #000;
 }

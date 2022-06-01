@@ -4,6 +4,10 @@
     
     @include('meta')
     <title>Zgyasu | AboutUs</title>
+    
+    <script>
+        window.addEventListener('scroll', footerzIndex);
+    </script>
 </head>
 <body onload="ShowHideDashboardNav(
         @if(isset($_COOKIE['cookie_user'])) 1

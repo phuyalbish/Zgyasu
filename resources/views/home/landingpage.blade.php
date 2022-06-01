@@ -4,8 +4,14 @@
 
     @include('meta')
     <link rel="stylesheet" href="css/views_home_landingpage.css">
+    <script src="js/scrollEvent.js"> </script>
     <title>Zgyasu | Home</title>
 
+        
+    <script>
+           window.addEventListener('scroll', landinghideNav);
+            window.addEventListener('scroll', footerzIndex);
+    </script>
 </head>
 <body onload="ShowHideDashboard(
     @if(isset($_COOKIE['cookie_user'])) 1
@@ -17,6 +23,7 @@
     @include('layouts.home_signinup')
     
     @include('layouts.home_navbar');
+    
     <div class="home_badge2">
         <video autoplay muted loop src="images/landingvideo2.mp4" style="position:relative; max-width:100vw;" ></video>
         <!-- <img src="images/landingvideo.jpg" alt="" srcset=""> -->
@@ -26,7 +33,7 @@
     <div class="dialog_container">
                 <h1>Ask <span id="ques_style">Question</span>,<br/>Get Answers</h1>
                 <p>{{$user_count}} Users | {{$server_count}} Servers</p>
-                <br>
+                <br><br>
                 <div class="group_description_buttons">
                     <a  href="{{route('dashboard.home')}}" class="group_description_button group_description_button_getstarted" id="opendashboard2" href="" >Open Dashboard</a>
                     <button onclick="openpopup()" class="group_description_button group_description_button_getstarted " id="getstarted2" >Get Started</button>
@@ -139,28 +146,28 @@
 <div class="company">
         <h2>Institute who trusted us:</h2>
            <div class="company_photo_grid">
-                <a href=""><img class="company_images" src="images/company-adb.png"alt=""></a>
-                <a href=""><img class="company_images" src="images/company-cg.png" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-cotivity.jpg" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-deerwalk.png" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-esewa.jpg" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-golyan.png" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-laxmi.jpg" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-nabil.jpg" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-nccs.png" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-ncell.jpg" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-onair.jpg" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-prime.jpg" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-viewfinder.jpg" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-worldlink.jpg" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-cloudfactory.png" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-dishhome.png" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-ime.png" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-leapfrog.jpeg" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-marriot.png" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-ok.jpg" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-rpb.png" alt=""></a>
-                <a href=""><img class="company_images" src="images/company-versik.png" alt=""></a>
+            <a href="https://www.adb.org/"><img class="company_images" src="images/company-adb.png"alt=""></a>
+            <a href="https://www.chaudharygroup.com/"><img class="company_images" src="images/company-cg.png" alt=""></a>
+            <a href="https://www.cotiviti.com.np/"><img class="company_images" src="images/company-cotivity.jpg" alt=""></a>
+            <a href="https://www.deerwalk.com/"><img class="company_images" src="images/company-deerwalk.png" alt=""></a>
+            <a href="https://esewa.com.np/#/home"><img class="company_images" src="images/company-esewa.jpg" alt=""></a>
+            <a href="https://golyangroup.com/"><img class="company_images" src="images/company-golyan.png" alt=""></a>
+            <a href="https://www.laxmibank.com/"><img class="company_images" src="images/company-laxmi.jpg" alt=""></a>
+            <a href="https://www.nabilbank.com/individual"><img class="company_images" src="images/company-nabil.jpg" alt=""></a>
+            <a href="https://www.nccs.edu.np/index"><img class="company_images" src="images/company-nccs.png" alt=""></a>
+            <a href="https://www.ncell.axiata.com/en"><img class="company_images" src="images/company-ncell.jpg" alt=""></a>
+            <a href="https://www.youtube.com/user/becomingsanjay"><img class="company_images" src="images/company-onair.jpg" alt=""></a>
+            <a href="https://www.prime.edu.np/"><img class="company_images" src="images/company-prime.jpg" alt=""></a>
+            <a href="https://viewfinders.com.np/"><img class="company_images" src="images/company-viewfinder.jpg" alt=""></a>
+            <a href="https://worldlink.com.np/"><img class="company_images" src="images/company-worldlink.jpg" alt=""></a>
+            <a href="https://www.cloudfactory.com/"><img class="company_images" src="images/company-cloudfactory.png" alt=""></a>
+            <a href="https://www.dishhome.com.np/"><img class="company_images" src="images/company-dishhome.png" alt=""></a>
+            <a href="https://imeremit.com.np/"><img class="company_images" src="images/company-ime.png" alt=""></a>
+            <a href="https://www.lftechnology.com/"><img class="company_images" src="images/company-leapfrog.jpeg" alt=""></a>
+            <a href="https://www.marriott.com/default.mi"><img class="company_images" src="images/company-marriot.png" alt=""></a>
+            <a href="https://www.onlinekhabar.com/"><img class="company_images" src="images/company-ok.jpg" alt=""></a>
+            <a href="https://www.shopratnaonline.com/"><img class="company_images" src="images/company-rpb.png" alt=""></a>
+            <a href="https://verisknepal.com.np/"><img class="company_images" src="images/company-versik.png" alt=""></a>
             </div>
     </div>
 

@@ -23,12 +23,11 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 
             </div>
-            <div class="dashboard-navbar-notifications">
+            <div class="dashboard-navbar-notifications" >
                 <i class="fa-solid fa-bell"></i>
             </div>
-            <div class="dashboard-navbar-message">
+            <div class="dashboard-navbar-message" >
                 <i class="fa-solid fa-message"></i>
-
             </div>
         </div>
 </div>
