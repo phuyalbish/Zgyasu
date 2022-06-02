@@ -4,37 +4,44 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Server;
+use App\Models\Interest;
 class HomeController extends Controller
 {
     
-    function AboutUs(){
-        return view('home.aboutus');
-    }
-    function Cookie(){
-        return view('home.cookie');
-    }
-    function HelpAndSupport(){
-        return view('home.helpandsupport');
-    }
     function LandingPage(){
-
+        // $users = User::all();
         $user_count = User:: all()->count();
         $server_count = Server:: all()->count();
-
-        return view('home.landingpage',compact('user_count','server_count'));
+        $interests = Interest:: all();
+        return view('home.landingpage',compact('user_count','server_count','interests'));
     }
+
+
+    function AboutUs(){
+        $interests = Interest:: all();
+        return view('home.aboutus',compact('user_count','server_count','interests'));
+    }
+
+
+    function Cookie(){
+        $interests = Interest:: all();
+        return view('home.cookie',compact('user_count','server_count','interests'));
+    }
+
+
+    function HelpAndSupport(){
+        $interests = Interest:: all();
+        return view('home.helpandsupport',compact('user_count','server_count','interests'));
+    }
+
+
     function PrivacyPolicy(){
-        return view('home.privacypolicy');
+        $interests = Interest:: all();
+        return view('home.privacypolicy',compact('user_count','server_count','interests'));
     }
-    function SignInUp(){ 
-        //dd(Auth::user());
 
-        $users = User:: all();
-        return view('home.signinup',compact('users'));
-        
-        
-    }
     function TermsAndCondition(){
-        return view('home.termsandconditions');
+        $interests = Interest:: all();
+        return view('home.termsandconditions',compact('user_count','server_count','interests'));
     }
 }

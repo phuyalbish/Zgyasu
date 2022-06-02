@@ -101,7 +101,7 @@
 	background: #e0dede;
 	justify-content: center;
 	display: flex;
-	margin: 20px auto;
+	margin: 10px auto;
 	padding: 10px;
 	border: none;
 	outline: none;
@@ -110,14 +110,14 @@
 .signinup-button{
 	width: 60%;
 	height: 40px;
-	margin: 10px auto;
+	margin: 0px auto;
 	justify-content: center;
 	display: block;
 	color: #fff;
 	background: #4F4A41;
 	font-size: 1em;
 	font-weight: bold;
-	margin-top: 20px;
+	margin-top: 5px;
 	outline: none;
 	border: none;
 	border-radius: 5px;
@@ -151,4 +151,30 @@
 }
 #chk:checked ~ .signup label{
 	transform: scale(.6);
+}
+
+
+.signin_checkbox{
+	display:flex;
+	flex-direction: row;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	width:94%;
+	height:120px;
+	margin-left:3%;
+	border-radius: 5px;
+	padding:5px;
+	background-color:#4f4a41;
+	color:#fff;
+	overflow-y: auto;
+}
+.select_text{
+	padding:2px;
+}
+.select_items{
+	min-width:100px;
+	height:20px;
+	margin:1px;
+	border:1px solid #212c1e9b;
+	border-radius: 3px;
 }

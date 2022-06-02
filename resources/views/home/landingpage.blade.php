@@ -58,8 +58,7 @@
 
                 <div class="group_description_box group_description_join">
                     <p class="group_description_desc group_description_desc_join">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime? 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime? 
+                    Zgyasu provides you with many servers on different topics. You can choose from the servers of your interest and can discuss your queries with people having  similar interest as yours.  
                     </p>
                     <a  href="{{route('dashboard.home')}}"  class="group_description_button group_description_button_join " id="opendashboard3"  >Join The Group</a>
                     <button  onclick="openpopup()" class="group_description_button group_description_button_join " id="getstarted3" >Join The Group</button>
@@ -71,8 +70,8 @@
                 <a  href="{{route('dashboard.home')}}"   class="group_description_button group_description_button_create" id="opendashboard4" >Create a Server</a> 
                 <button onclick="openpopup()" class="group_description_button group_description_button_create" id="getstarted4" >Create a Server</button>
                     <p class="group_description_desc group_description_desc_create">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime?
+                    Couldn't find the servers that interest you? Why not make your own! Zgyasu also provides you the opppertunity to make your own circle of people with the similar interest as yours.
+
                     </p>
                 </div>
 
@@ -96,11 +95,11 @@
                     <div class="group_description_box_inner_outer group_description_connect">
                 
                     <p class="group_description_desc group_description_desc_outer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime? 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime? 
+                    Want a professional opition on a different queries from others but you are not being noticed. You can directly connect with the professional about your queries.
+
                     </p>
-                    <a  href="{{route('dashboard.home')}}"  class="group_description_button group_description_button_connect " id="opendashboard5" >Connect with People</a>
-                    <button  onclick="openpopup()" class="group_description_button group_description_button_connect" id="getstarted5" >Connect with People</button>
+                    <a  href="{{route('dashboard.home')}}"  class="group_description_button group_description_button_connect " id="opendashboard5" >Connect with Professionals</a>
+                    <button  onclick="openpopup()" class="group_description_button group_description_button_connect" id="getstarted5" >Connect with Professionals</button>
                 </div>
 
             </div>
@@ -115,8 +114,8 @@
                 <div class="group_description_box_inner_outer group_description_ask">
             
                 <p class="group_description_desc group_description_desc_outer">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime? 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime? 
+                You have many queries inside your head but are unable to find the answers to them. Then why not ask others opitions on those questions. 
+
                 </p>
                 <a  href="{{route('dashboard.home')}}"  class="group_description_button group_description_button_ask " id="opendashboard6" >Ask Question</a>
                 <button  onclick="openpopup()" class="group_description_button group_description_button_ask" id="getstarted6" >Ask Question</button>
@@ -135,8 +134,7 @@
                 <div class="group_description_box_inner_outer group_description_answer">
             
                 <p class="group_description_desc group_description_desc_outer">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime? 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi dolorem nihil eligendi temporibus delectus consequuntur voluptatem quam nostrum! Quae veritatis esse odio totam vel voluptates, praesentium quod vitae maxime? 
+                Share your thoughts among the people who are seeking the answers on the topic you are aware of. 
                 </p>
                 <a  href="{{route('dashboard.home')}}"  class="group_description_button group_description_button_answer " id="opendashboard7" opendashboard-option">Answer Question</a>
                 <button onclick="openpopup()" class="group_description_button group_description_button_answer" id="getstarted7" >Answer Question</button>
@@ -146,28 +144,28 @@
 <div class="company">
         <h2>Institute who trusted us:</h2>
            <div class="company_photo_grid">
-            <a href="https://www.adb.org/"><img class="company_images" src="images/company-adb.png"alt=""></a>
-            <a href="https://www.chaudharygroup.com/"><img class="company_images" src="images/company-cg.png" alt=""></a>
-            <a href="https://www.cotiviti.com.np/"><img class="company_images" src="images/company-cotivity.jpg" alt=""></a>
-            <a href="https://www.deerwalk.com/"><img class="company_images" src="images/company-deerwalk.png" alt=""></a>
-            <a href="https://esewa.com.np/#/home"><img class="company_images" src="images/company-esewa.jpg" alt=""></a>
-            <a href="https://golyangroup.com/"><img class="company_images" src="images/company-golyan.png" alt=""></a>
-            <a href="https://www.laxmibank.com/"><img class="company_images" src="images/company-laxmi.jpg" alt=""></a>
-            <a href="https://www.nabilbank.com/individual"><img class="company_images" src="images/company-nabil.jpg" alt=""></a>
-            <a href="https://www.nccs.edu.np/index"><img class="company_images" src="images/company-nccs.png" alt=""></a>
-            <a href="https://www.ncell.axiata.com/en"><img class="company_images" src="images/company-ncell.jpg" alt=""></a>
-            <a href="https://www.youtube.com/user/becomingsanjay"><img class="company_images" src="images/company-onair.jpg" alt=""></a>
-            <a href="https://www.prime.edu.np/"><img class="company_images" src="images/company-prime.jpg" alt=""></a>
-            <a href="https://viewfinders.com.np/"><img class="company_images" src="images/company-viewfinder.jpg" alt=""></a>
-            <a href="https://worldlink.com.np/"><img class="company_images" src="images/company-worldlink.jpg" alt=""></a>
-            <a href="https://www.cloudfactory.com/"><img class="company_images" src="images/company-cloudfactory.png" alt=""></a>
-            <a href="https://www.dishhome.com.np/"><img class="company_images" src="images/company-dishhome.png" alt=""></a>
-            <a href="https://imeremit.com.np/"><img class="company_images" src="images/company-ime.png" alt=""></a>
-            <a href="https://www.lftechnology.com/"><img class="company_images" src="images/company-leapfrog.jpeg" alt=""></a>
-            <a href="https://www.marriott.com/default.mi"><img class="company_images" src="images/company-marriot.png" alt=""></a>
-            <a href="https://www.onlinekhabar.com/"><img class="company_images" src="images/company-ok.jpg" alt=""></a>
+            <a href="https://www.adb.org/"  target="_blank"><img class="company_images" src="images/company-adb.png"alt=""></a>
+            <a href="https://www.chaudharygroup.com/" target="_blank"><img class="company_images" src="images/company-cg.png" alt=""></a>
+            <a href="https://www.cotiviti.com.np/" target="_blank"><img class="company_images" src="images/company-cotivity.jpg" alt=""></a>
+            <a href="https://www.deerwalk.com/" target="_blank"><img class="company_images" src="images/company-deerwalk.png" alt=""></a>
+            <a href="https://esewa.com.np/#/home" target="_blank"><img class="company_images" src="images/company-esewa.jpg" alt=""></a>
+            <a href="https://golyangroup.com/" target="_blank"><img class="company_images" src="images/company-golyan.png" alt=""></a>
+            <a href="https://www.laxmibank.com/" target="_blank"><img class="company_images" src="images/company-laxmi.jpg" alt=""></a>
+            <a href="https://www.nabilbank.com/individual" target="_blank"><img class="company_images" src="images/company-nabil.jpg" alt=""></a>
+            <a href="https://www.nccs.edu.np/index" target="_blank"><img class="company_images" src="images/company-nccs.png" alt=""></a>
+            <a href="https://www.ncell.axiata.com/en" target="_blank"><img class="company_images" src="images/company-ncell.jpg" alt=""></a>
+            <a href="https://www.youtube.com/user/becomingsanjay" target="_blank"><img class="company_images" src="images/company-onair.jpg" alt=""></a>
+            <a href="https://www.prime.edu.np/" target="_blank"><img class="company_images" src="images/company-prime.jpg" alt=""></a>
+            <a href="https://viewfinders.com.np/" target="_blank"><img class="company_images" src="images/company-viewfinder.jpg" alt=""></a>
+            <a href="https://worldlink.com.np/" target="_blank"><img class="company_images" src="images/company-worldlink.jpg" alt=""></a>
+            <a href="https://www.cloudfactory.com/" target="_blank"><img class="company_images" src="images/company-cloudfactory.png" alt=""></a>
+            <a href="https://www.dishhome.com.np/" target="_blank"><img class="company_images" src="images/company-dishhome.png" alt=""></a>
+            <a href="https://imeremit.com.np/" target="_blank"><img class="company_images" src="images/company-ime.png" alt=""></a>
+            <a href="https://www.lftechnology.com/" target="_blank"><img class="company_images" src="images/company-leapfrog.jpeg" alt=""></a>
+            <a href="https://www.marriott.com/default.mi" target="_blank"><img class="company_images" src="images/company-marriot.png" alt=""></a>
+            <a href="https://www.onlinekhabar.com/" target="_blank"><img class="company_images" src="images/company-ok.jpg" alt=""></a>
             <a href="https://www.shopratnaonline.com/"><img class="company_images" src="images/company-rpb.png" alt=""></a>
-            <a href="https://verisknepal.com.np/"><img class="company_images" src="images/company-versik.png" alt=""></a>
+            <a href="https://verisknepal.com.np/" target="_blank"><img class="company_images" src="images/company-versik.png" alt=""></a>
             </div>
     </div>
 

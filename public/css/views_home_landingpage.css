@@ -18,6 +18,8 @@ body{
   font-weight: 900;
   color: #222;
 }
+
+
 #ques_style{
   color:transparent;
   -webkit-text-stroke: 1px #222;
@@ -39,8 +41,8 @@ body{
   width: 220px;
   height: 225px;
   position: absolute;
-  top: 670px;
-  left: 40%;
+  top: 720px;
+  left: 42%;
 }
 
 .grid_view_description_body {

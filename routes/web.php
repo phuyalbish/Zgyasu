@@ -29,8 +29,6 @@ Route::get('termsandcondition', [HomeController::class,'TermsAndCondition'])->na
 
 Route::post('register', [UserController::class,'store'])->name('register.store');
 Route::get('login', [UserController::class,'login'])->name('loginCheck');
-Route::get('signupinup', [HomeController::class,'SignInUp'])->name('home.signinup');
-
 
 
 

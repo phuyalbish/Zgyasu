@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\User;
+use App\Models\UserInterestBridge;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 class UserController extends Controller
@@ -41,6 +42,7 @@ class UserController extends Controller
             'user_password' => 'required',
             'user_bio' => 'required',
         ]);
+
         $userStore=new User();
         $userStore->user_username=$request->user_username;
         $userStore->user_fname=$request->user_fname;
@@ -48,7 +50,26 @@ class UserController extends Controller
         $userStore->user_bio=$request->user_bio;
         $userStore->user_password= Crypt::encrypt($request->user_password);
         $userStore->save();
-        // Mail::to($userStore->email)->send(new RegisterNotification());
+        
+
+        
+        $count= sizeof($request->user_intrest);
+        $countarr = 0;
+        $interestarr = array();
+        for($i=0; $i<=$count; $i++){
+            if (isset($request->user_intrest[$i]))
+            {
+                 $interestarr[$countarr] = $request->user_intrest[$i];
+                 $countarr++;
+            }
+        }   
+        for($j=0; $j < sizeof($interestarr); $j++){
+            $interestStore[$j]=new UserInterestBridge();
+            $interestStore[$j]->interest_name = $interestarr[$j];
+            $interestStore[$j]->user_username = $request->user_username;
+            $interestStore[$j]->save();
+        }
+
         setcookie('cookie_user', $request->user_username, time() + (86400 * 90), "/");
         return redirect(route('dashboard.home',compact('userStore')));
        

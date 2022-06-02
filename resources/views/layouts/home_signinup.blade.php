@@ -16,7 +16,19 @@
             document.getElementById('signinpopup').style.display = "none";
         }
 		}
-    </script>
+		
+		// function chkcontrol(j) {
+		// 	var total=0;
+		// 	for(var i=0; i < (document.form1.ckb.length); i++){
+		// 		if(document.form1.ckb[i].checked){
+		// 			total =total +1;
+		// 		}
+		// 		if(total > 3){
+		// 			document.getElementById("demo").ckb[j].checked = false ;
+		// 		}
+		// 	}
+		// } 
+		</script>
 
 </head>
 <body>
@@ -50,9 +62,9 @@
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="signup">
-				<form method="post" action="{{route('register.store')}}">
+				<form method="post" class="signupform" action="{{route('register.store')}}">
 				{{ csrf_field() }}
-					<label class="signinup_label" for="chk" aria-hidden="true">Sign up</label>
+					<label class="signinup_label" for="chk" aria-hidden="true" style="margin:10px;">Sign up</label>
 
 					<input 
 					class="signinup_input"
@@ -97,6 +109,19 @@
 					 minlength="15"
 					 autocomplete="off"
 					value="{{ old('user_bio') }}">
+
+					<div class="signin_checkbox" >
+						<?php 
+							$count=0;
+						?>
+					@foreach($interests as $interest)
+						
+						<div class="select_items"><input type=checkbox name="user_intrest[{{$count}}]" value="{{$interest->interest_name}}"> <span class="select_text">{{$interest->interest_name}}</span></div>
+						<?php
+							$count++;
+							?>
+                        @endforeach
+					</div>
 
 					<button class="signinup-button signup-button">Sign up</button>
 				</form>
