@@ -31,13 +31,6 @@ Route::post('register', [UserController::class,'store'])->name('register.store')
 Route::get('login', [UserController::class,'login'])->name('loginCheck');
 
 
-
-//For Dashboard
-Route::prefix('dashboard')->middleware('ChecktheCookie')->group(function(){
-
-    Route::get('/home', [DashboardController::class,'DashboardHome'])->name('dashboard.home');
-});
-
 //For Developer
 Route::prefix('developer')->middleware('ChecktheDeveloper')->group(function(){
 
@@ -52,3 +45,22 @@ Route::prefix('developer')->middleware('ChecktheDeveloperDashboard')->group(func
 Route::get('signout', [DeveloperController::class,'CmsSignOut'])->name('developer.signout');
 Route::post('developer/loginCheck', [DeveloperController::class,'CmsLoginCheck'])->name('developer.loginCheck');
 
+
+
+//For Dashboard
+Route::prefix('dashboard')->middleware('ChecktheCookie')->group(function(){
+
+    Route::get('/home', [DashboardController::class,'DashboardHome'])->name('dashboard.home');
+    Route::get('/explore/branch', [DashboardController::class,'DashboardExploreBranch'])->name('dashboard.explore-branch');
+    Route::get('/explore/server', [DashboardController::class,'DashboardExploreServers'])->name('dashboard.explore-servers');
+    Route::get('/server/join', [DashboardController::class,'DashboardServerJoin'])->name('dashboard.server-join');
+    Route::get('/server/preview', [DashboardController::class,'DashboardServerPreview'])->name('dashboard.server-preview');
+    Route::get('/server/setting', [DashboardController::class,'DashboardServerSetting'])->name('dashboard.server-setting');
+    Route::get('/user/setting', [DashboardController::class,'DashboardUserSetting'])->name('dashboard.user-setting');
+});
+Route::get('dashboard/signout', [UserController::class,'DashboardSignOut'])->name('dashboard.signout');
+
+Route::get('checkpage', [DashboardController::class,'Check'])->name('check1');
+
+
+Route::post('server/store', [DashboardController::class,'Serverstore'])->name('server.store');

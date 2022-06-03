@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    @include('meta')
-    <link rel="stylesheet" href="css/layout_home_footer.css">
-    
-      
-</head>
-<body>
+
 <footer id="scrollaction">
     <div class="innerfooter">
         <div class="gridfooter">
@@ -87,5 +79,3 @@
         </div>
     </div>
 </footer>
-</body>
-</html>

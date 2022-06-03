@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     
-    @include('meta')
+    @include('home/home_meta')
     <title>Zgyasu | AboutUs</title>
     
     <script>

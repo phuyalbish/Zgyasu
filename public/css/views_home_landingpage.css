@@ -22,7 +22,7 @@ body{
 
 #ques_style{
   color:transparent;
-  -webkit-text-stroke: 1px #222;
+  -webkit-text-stroke: 0.5px #222;
 }
 .dialog_container p, .group_descripton_link{
   font-family: 'Be Vietnam Pro';

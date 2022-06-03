@@ -1,0 +1,350 @@
+*{
+  
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+  }
+  
+  .innernavbar {
+      margin-top:0px;
+    display: flex;
+    flex-direction: row;
+    padding:10px 2% 0 4%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index:4;
+  }
+  
+  .logos{
+    width: 70px;
+    height:auto;
+  }
+  
+  #landingpage_hide_nav{
+    display:block;
+  }
+  .div_buttons a{
+    font-family: 'Be Vietnam Pro';
+    margin-left:20px;
+  }
+  .fa-house{
+    font-size:20px;
+    color:#212c1E;
+  }
+  
+  
+  /* .div_buttons .div_buttons_styles {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #999999;
+  }
+  
+  .div_buttons .learn_more {
+    font-size: 25px;
+  } */
+  .navbar_link{
+    text-decoration: none;
+    color:#212c1E;
+    font-family: 'Vollkorn';
+  }
+  .navbar_button{
+    padding:15px;
+    margin:2px;
+    background-color: #4F4A41;
+    outline: none;
+    color: #fff;
+    border: 2px solid #4F4A41;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 10px;
+  }
+  .navbar_button:hover {
+    padding:15px;
+    background-color: transparent;
+    color: #000;
+  }
+  
+
+
+  /*  */
+
+
+  *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+  }
+  .signinpopup{
+    z-index: 5;
+    top:0px;
+    position:fixed;
+    width:100vw;
+    height:100vh;
+  }
+  .backgroundblurr{  
+      background-color: #ebfdfaa1;
+      position:absolute;
+      width:100vw;
+      height:100vh;
+      z-index:3;
+  }
+  .innersigninpopup{
+    width:60%;
+    margin-left: 20%;
+    padding:20px;
+    border-radius: 10px;
+    background-color: #212c1E;
+    margin-top: 30px; 
+    position:absolute;
+    z-index:4;
+  }
+  .signinup_logo{
+      position:relative;
+      width:340px;
+      float:right;
+      margin-top:170px;
+  }
+  
+  
+  
+  .errormessage{
+      position:absolute;
+      margin-left: 390px;
+      border:1px solid red;
+      width:340px;
+      height:130px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  #cross-position{
+    position:relative;
+    font-size:20px;
+    color:#fff;
+    float:right;
+    margin:5px;
+    padding:3px 5px;
+    border-radius: 10px;
+    border:1px solid rgba(255, 255, 255, 0);
+  }
+  #cross-position:hover{
+      border:1px solid #fff;
+    cursor: pointer;
+  }
+  
+  
+  
+  .main{
+      width: 350px;
+      height: 500px;
+      background: #212c1E;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 5px 20px 50px #000;
+  }
+  #chk{
+      display: none;
+  }
+  .signup{
+      position: relative;
+      width:100%;
+      height: 100%;
+  }
+  .signinup_label{
+      color: #fff;
+      font-size: 2.3em;
+      justify-content: center;
+      display: flex;
+      margin: 60px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: .5s ease-in-out;
+  }
+  .signinup_input{
+      width: 60%;
+      height: 20px;
+      background: #e0dede;
+      justify-content: center;
+      display: flex;
+      margin: 10px auto;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+  }
+  .signinup-button{
+      width: 60%;
+      height: 40px;
+      margin: 0px auto;
+      justify-content: center;
+      display: block;
+      color: #fff;
+      background: #4F4A41;
+      font-size: 1em;
+      font-weight: bold;
+      margin-top: 5px;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      transition: .2s ease-in;
+      cursor: pointer;
+  }
+  .signinup-button:hover{
+      background: rgba(0, 0, 0, 0);
+      border:2px solid #4F4A41;
+  }
+  .signin-button:hover{
+      color:#4f4a41;
+  }
+  .login{
+      height: 460px;
+      background: #eee;
+      border-radius: 60% / 10%;
+      transform: translateY(-180px);
+      transition: .8s ease-in-out;
+  }
+  .login label{
+      color: #212c1E;
+      transform: scale(.6);
+  }
+  
+  #chk:checked ~ .login{
+      transform: translateY(-500px);
+  }
+  #chk:checked ~ .login label{
+      transform: scale(1);	
+  }
+  #chk:checked ~ .signup label{
+      transform: scale(.6);
+  }
+  
+  
+  .signin_checkbox{
+      display:flex;
+      flex-direction: row;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      width:94%;
+      height:120px;
+      margin-left:3%;
+      border-radius: 5px;
+      padding:5px;
+      background-color:#4f4a41;
+      color:#fff;
+      overflow-y: auto;
+  }
+  .select_text{
+      padding:2px;
+  }
+  .select_items{
+      min-width:100px;
+      height:20px;
+      margin:1px;
+      border:1px solid #212c1e9b;
+      border-radius: 3px;
+  }
+
+  
+
+  /*  */
+
+  *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+  }
+  footer {
+    margin:0px;
+    color: #aebcba;
+    font-family: sans-serif;
+    position: fixed;
+    bottom: 0px;
+    background-color: #212c1E;
+    width: 100vw;
+    height: 55vh;
+    z-index:0;
+    
+  }
+  
+  footer .innerfooter {
+    padding-top:30px;
+    padding-bottom:30px;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+  }
+  
+  footer .innerfooter a {
+    text-decoration: none;
+    color: #aebcba;
+  }
+  
+  footer .innerfooter .gridfooter {
+    display: -ms-grid;
+    display: grid;
+    height: 80%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100%;
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
+  }
+  
+  footer .innerfooter .gridfooter .innercontainer .floatcontainer {
+    margin-bottom: 7px;
+  }
+  
+  footer .innerfooter .gridfooter .innercontainer .floatcontainer img {
+    float: left;
+    clear: right;
+  }
+  
+  footer .innerfooter .gridfooter .innercontainer3 {
+    text-align: right;
+  }
+  
+  footer .innerfooter .gridfooter .innercontainer3 .floatcontainerhead {
+    width: 150px;
+    float: right;
+  }
+  
+  footer .innerfooter .gridfooter .innercontainer3 .floatcontainerhead img {
+    float: left;
+    clear: right;
+    margin-left:13px;
+    
+  }
+  footer .innerfooter .gridfooter .innercontainer3 .floatcontainerhead h2{
+    margin-top:10px;
+  }
+  .innercontainer h3{
+    margin-bottom: 10px;
+  }
+  .policiesfooter, .rightsreserved{
+    font-family: 'Sriracha';
+  }
+  footer .innerfooter .policiesfooter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    text-align: center;
+  }
+  
+  footer .innerfooter .rightsreserved {
+    text-align: center;
+  }
+  
+  .floatcontainer, .innercontainer{
+    font-family:'Vollkorn';
+  }
+  .floatcontainer i{
+    font-size: 25px;
+    padding-right:15px;
+  }

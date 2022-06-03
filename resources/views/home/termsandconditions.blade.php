@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('meta')
+    @include('home/home_meta')
     <title>Zgyasu | Terms and Condition</title>
     <script>
         window.addEventListener('scroll', footerzIndex);

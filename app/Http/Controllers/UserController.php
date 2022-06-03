@@ -71,10 +71,16 @@ class UserController extends Controller
         }
 
         setcookie('cookie_user', $request->user_username, time() + (86400 * 90), "/");
-        return redirect(route('dashboard.home',compact('userStore')));
+        return redirect(route('dashboard.home'));
        
     }
 
+    function DashboardSignOut(){
+        
+        unset($_COOKIE['cookie_user']);
+        setcookie('cookie_user', null, -1, '/'); 
+        return redirect(route('home.landingpage'));
+    }
     /**
      * Display the specified resource.
      *

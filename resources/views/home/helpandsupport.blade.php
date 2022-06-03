@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('meta')
+    @include('home.home_meta')
     <title>Zgyasu | Help and Support</title>
     <script>
         window.addEventListener('scroll', footerzIndex);

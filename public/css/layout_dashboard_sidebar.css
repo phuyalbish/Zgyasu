@@ -1,1 +1,72 @@
-/* No CSS *//*# sourceMappingURL=dashboard_sidebar.css.map */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    position:absolute;
+    width:70px;
+    height:100vh;
+    background-color:#212b1e;
+    z-index: 4;
+}
+
+.sidebar_content{
+    margin:10px;
+}
+.sidebar_logo_content{
+    background-color: #212b1e;
+    position:fixed;
+    padding:10px;
+    z-index: 3;
+}
+.sidebar_logo{
+    width:50px;
+}
+
+.sidebar_fixed_items{
+    width:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #364532;
+    border-radius: 10px;
+}
+.sidebar_scroll_content{
+    overflow-y: scroll;
+    height:68vh;
+    width:50px;
+        position:fixed;
+        margin-top:80px;
+}
+
+.sidebar_explore_add_help_content{
+    width:50px;
+    height:150px;
+    padding:10px;
+}
+
+.sidebar_server_content{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+
+}
+.sidebar_server_icons{
+    margin-bottom:7px;
+}
+
+.sidebar_usersetting_content{
+    
+    padding:10px 5px;
+    position:fixed;
+    bottom: 0px;
+    height:100px;
+    z-index: 3;
+}
+.sidebar_icons{
+    font-size: 30px;
+    width:100%;
+    color:#fff;
+}

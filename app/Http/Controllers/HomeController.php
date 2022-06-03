@@ -19,29 +19,29 @@ class HomeController extends Controller
 
     function AboutUs(){
         $interests = Interest:: all();
-        return view('home.aboutus',compact('user_count','server_count','interests'));
+        return view('home.aboutus',compact('interests'));
     }
 
 
     function Cookie(){
         $interests = Interest:: all();
-        return view('home.cookie',compact('user_count','server_count','interests'));
+        return view('home.cookie',compact('interests'));
     }
 
 
     function HelpAndSupport(){
         $interests = Interest:: all();
-        return view('home.helpandsupport',compact('user_count','server_count','interests'));
+        return view('home.helpandsupport',compact('interests'));
     }
 
 
     function PrivacyPolicy(){
         $interests = Interest:: all();
-        return view('home.privacypolicy',compact('user_count','server_count','interests'));
+        return view('home.privacypolicy',compact('interests'));
     }
 
     function TermsAndCondition(){
         $interests = Interest:: all();
-        return view('home.termsandconditions',compact('user_count','server_count','interests'));
+        return view('home.termsandconditions',compact('interests'));
     }
 }

@@ -2,24 +2,22 @@
 <html lang="en">
 <head>
 
-    @include('meta')
+@include('home.home_meta')
     <link rel="stylesheet" href="css/views_home_landingpage.css">
     <script src="js/scrollEvent.js"> </script>
     <title>Zgyasu | Home</title>
 
-        
     <script>
            window.addEventListener('scroll', landinghideNav);
             window.addEventListener('scroll', footerzIndex);
     </script>
 </head>
-<body onload="ShowHideDashboard(
-    @if(isset($_COOKIE['cookie_user'])) 1
-    @else 0
-    @endif
-)">
-        
-        
+
+    <body onload="ShowHideDashboard(
+        @if(isset($_COOKIE['cookie_user'])) 1
+        @else 0
+        @endif
+    )">
     @include('layouts.home_signinup')
     
     @include('layouts.home_navbar');
@@ -58,7 +56,7 @@
 
                 <div class="group_description_box group_description_join">
                     <p class="group_description_desc group_description_desc_join">
-                    Zgyasu provides you with many servers on different topics. You can choose from the servers of your interest and can discuss your queries with people having  similar interest as yours.  
+                    Zgyasu provides you with many servers on different topics. You can choose from the servers of your interest and can discuss your queries with people having  similar interest as yours.  Joining the group helps interacct with the professionals and place your queries and get involved in the defined discussions that can benefit one on starting a carrer.
                     </p>
                     <a  href="{{route('dashboard.home')}}"  class="group_description_button group_description_button_join " id="opendashboard3"  >Join The Group</a>
                     <button  onclick="openpopup()" class="group_description_button group_description_button_join " id="getstarted3" >Join The Group</button>
@@ -70,7 +68,7 @@
                 <a  href="{{route('dashboard.home')}}"   class="group_description_button group_description_button_create" id="opendashboard4" >Create a Server</a> 
                 <button onclick="openpopup()" class="group_description_button group_description_button_create" id="getstarted4" >Create a Server</button>
                     <p class="group_description_desc group_description_desc_create">
-                    Couldn't find the servers that interest you? Why not make your own! Zgyasu also provides you the opppertunity to make your own circle of people with the similar interest as yours.
+                    Couldn't find the servers that interest you? Why not make your own! Zgyasu also provides you the opppertunity to make your own circle of people with the similar interest as yours. Creating your own server creates the person into a flashlight that he can 
 
                     </p>
                 </div>

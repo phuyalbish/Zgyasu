@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	
-	@include('meta')
+	@include('home_meta')
     <link rel="stylesheet" href="css/views_developer_cms.css">
 
 

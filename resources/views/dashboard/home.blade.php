@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    @include('meta')
-    <title>Dashboard | Home</title>
-</head>
-<body>
+@extends('layouts/dashboard_layout')
+    @section('title','Dashboard - Home')
     
-</body>
-</html>
+    @section('dashboard_main')
+        <a href="{{route('dashboard.signout')}}"  class="" id="" >Log out</a>  
+        @include('dashboard.server-create')
+    @endsection

@@ -73,7 +73,6 @@ footer .innerfooter .gridfooter .innercontainer3 .floatcontainerhead h2{
   font-family: 'Sriracha';
 }
 footer .innerfooter .policiesfooter {
-  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
@@ -86,7 +85,6 @@ footer .innerfooter .rightsreserved {
 
 .floatcontainer, .innercontainer{
   font-family:'Vollkorn';
-  font-size:px;
 }
 .floatcontainer i{
   font-size: 25px;

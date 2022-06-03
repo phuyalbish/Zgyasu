@@ -1,0 +1,93 @@
+
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+      }
+      .signinpopup{
+        z-index: 5;
+        top:0px;
+        position:fixed;
+        width:100vw;
+        height:100vh;
+      }
+      .backgroundblurr{  
+          background-color: #ebfdfac7;
+          border:3px solid black;
+          position: fixed;
+          top:0px;
+          left:0px;
+          width:100vw;
+          height:100vh;
+          z-index:5;
+      }
+      .innersigninpopup{
+        width:60%;
+        margin-left: 20%;
+        padding:20px;
+        border-radius: 10px;
+        background-color: #212c1E;
+        margin-top: 70px; 
+        position:absolute;
+        z-index:4;
+      }
+      
+.signinup_logo{
+	position:absolute;
+	width:340px;
+	float:right;
+	margin-top:170px;
+    margin-left: 450px;
+    z-index: 5;
+}
+
+
+
+.errormessage{
+	position:absolute;
+	margin-left: 420px;
+    margin-top: 20px;
+	border:1px solid rgb(255, 238, 238);
+	width:340px;
+	height:130px;
+  color:#fff;
+    z-index: 5;
+    padding:10px;
+}
+
+    
+
+      #cross-position{
+        position:relative;
+        font-size:20px;
+        color:#fff;
+        float:right;
+        margin:5px;
+        padding:3px 5px;
+        border-radius: 10px;
+        border:1px solid rgba(255, 255, 255, 0);
+      }
+      #cross-position:hover{
+          border:1px solid #fff;
+        cursor: pointer;
+      }
+      
+      
+      .signupform{
+          width:50%;
+      }
+      .signupform input, .signupform select, .signupform textarea{
+          width:100%;
+          border:1px solid #fff;
+          padding:10px;
+          margin:5px;
+          background-color: transparent;
+          border-radius: 10px;
+          color:#fff;
+          font-size: 17px;
+          outline: none;
+          resize: none;
+      }
+      .signupform option{
+          color:#212c1E;
+      }

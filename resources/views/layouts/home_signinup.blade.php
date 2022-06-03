@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	
-	@include('meta')
+
     <link rel="stylesheet" href="css/layout_signinup.css">
     <script type="text/javascript">
         function opencloseErr(){
@@ -17,25 +13,11 @@
         }
 		}
 		
-		// function chkcontrol(j) {
-		// 	var total=0;
-		// 	for(var i=0; i < (document.form1.ckb.length); i++){
-		// 		if(document.form1.ckb[i].checked){
-		// 			total =total +1;
-		// 		}
-		// 		if(total > 3){
-		// 			document.getElementById("demo").ckb[j].checked = false ;
-		// 		}
-		// 	}
-		// } 
 		</script>
-
-</head>
-<body>
-		
+	
     <div class="signinpopup" id="signinpopup">
 		<span onload="opencloseErr()"></span>
-	<div class="backgroundblurr" onclick='popupclose()'></div>
+		<div class="backgroundblurr" onclick='popupclose()'></div>
         <div class="innersigninpopup">
             <i class="fa-solid fa-xmark"  onclick="popupclose()" id="cross-position"></i>
 			
@@ -50,11 +32,9 @@
                     
 			@if ($errors->any())
 			<div class="errormessage">
-				<ul>
 					@foreach ($errors->all() as $error)
-						<li>{{ $error }}</li>
+						<p>{{ $error }}</p>
 					@endforeach
-				</ul>
 			</div>
 		@endif
             <img src="images/favicon.png" class="signinup_logo" alt="" srcset="">
@@ -148,5 +128,3 @@
 		
 			@endif
 		</script>
-</body>
-</html>
