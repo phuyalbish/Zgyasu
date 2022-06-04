@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Server;
 use App\Models\Branch;
+use App\Models\UserServerBridge;
 
 use Illuminate\Http\Request;
 
@@ -12,8 +13,20 @@ class DashboardController extends Controller
 
         $cookie = $_COOKIE['cookie_user'];
         $branches = Branch:: all();
-        $servers = Server::query()->where('server_tagname', 'LIKE', "%{{$cookie}}%")->get();
-        return view('dashboard.home',compact('servers','branches','cookie'));
+
+
+        $count= 10;
+        $countarr = 0;
+        $serverarr = array();
+        foreach(UserServerBridge::all() as $servers){
+
+            if ($servers->user_username == $cookie)
+            {
+                 $serverarr[$countarr] = $servers->server_tagname;
+                 $countarr++;
+            }
+        }
+        return view('dashboard.home',compact('serverarr','branches','cookie'));
     }
     function DashboardExploreBranch(){
         return view('dashboard.explore-branch');
@@ -23,8 +36,24 @@ class DashboardController extends Controller
         return view('dashboard.explore-servers');
 
     }
-    function DashboardServerJoin(){
-        return view('dashboard.server-join');
+    public function DashboardServerJoin($serverurl){
+
+        $cookie = $_COOKIE['cookie_user'];
+        $branches = Branch:: all();
+
+
+        $count= 10;
+        $countarr = 0;
+        $serverarr = array();
+        foreach(UserServerBridge::all() as $servers){
+
+            if ($servers->user_username == $cookie)
+            {
+                 $serverarr[$countarr] = $servers->server_tagname;
+                 $countarr++;
+            }
+        }
+        return view('dashboard.server-join',compact('serverarr','branches','cookie','serverurl'));
 
     }
     function DashboardServerPreviewe(){

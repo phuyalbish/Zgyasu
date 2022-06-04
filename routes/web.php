@@ -53,7 +53,7 @@ Route::prefix('dashboard')->middleware('ChecktheCookie')->group(function(){
     Route::get('/home', [DashboardController::class,'DashboardHome'])->name('dashboard.home');
     Route::get('/explore/branch', [DashboardController::class,'DashboardExploreBranch'])->name('dashboard.explore-branch');
     Route::get('/explore/server', [DashboardController::class,'DashboardExploreServers'])->name('dashboard.explore-servers');
-    Route::get('/server/join', [DashboardController::class,'DashboardServerJoin'])->name('dashboard.server-join');
+    Route::get('/server/joined/{serverurl}', [DashboardController::class,'DashboardServerJoin'])->name('dashboard.server-join');
     Route::get('/server/preview', [DashboardController::class,'DashboardServerPreview'])->name('dashboard.server-preview');
     Route::get('/server/setting', [DashboardController::class,'DashboardServerSetting'])->name('dashboard.server-setting');
     Route::get('/user/setting', [DashboardController::class,'DashboardUserSetting'])->name('dashboard.user-setting');
