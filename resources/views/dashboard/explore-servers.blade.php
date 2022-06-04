@@ -2,5 +2,5 @@
     @section('title','Dashboard - Home')
     
     @section('dashboard_main')
-        <a href="{{route('dashboard.signout')}}"  class="" id="" >Log out</a>  
+        <h1>sdkfl</h1>
     @endsection

@@ -21,9 +21,9 @@
 
                 </div>
                 <div class="sidebar_explore_add_help_content sidebar_fixed_items">
-                    <a onclick=""><i class="fa-solid fa-compass  sidebar_icons"></i>
+                    <a href="{{route('dashboard.explore-branch')}}"><i class="fa-solid fa-compass  sidebar_icons"></i></a>
                    <a onclick="serveropenpopup()"><i class="fa-solid fa-circle-plus  sidebar_icons"></i></a>
-                   <a href="{{route('home.helpandsupport')}}"><i class="fa-solid fa-circle-question  sidebar_icons"></i>
+                   <a href="{{route('home.helpandsupport')}}"><i class="fa-solid fa-circle-question  sidebar_icons"></i></a>
                 </div>
             </div>
             <div class="sidebar_usersetting_content sidebar_content sidebar_fixed_items">
@@ -36,6 +36,7 @@
 
     <div class="navbar">
         <div class="innernav">
+
                 <div class="navbar_pageheading">
                     <div class="navbar_pageheading_title">Home - Dashboard of Bishal</div>
                     <div class="navbar_pageheading_description">Here we come teh dof kodof dok</div>
@@ -50,6 +51,7 @@
                     <div class="dashboard-navbar-notifications navbar_icons_items">
                         <i class="fa-solid fa-bell"></i>
                     </div>
+
                     <div class="dashboard-navbar-darkmode navbar_icons_items">
                         <i class="fa-solid fa-moon"></i>
                     </div>
@@ -59,7 +61,7 @@
     </div>
 
     <div class="main_content">
-         @yield('dashboard_main');
+         @yield('dashboard_main')
     </div>
 
 

@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 use App\Models\Server;
 use App\Models\Branch;
+use App\Models\Interest;
+use App\Models\UserInterestBridge;
 use App\Models\UserServerBridge;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -28,8 +30,41 @@ class DashboardController extends Controller
         }
         return view('dashboard.home',compact('serverarr','branches','cookie'));
     }
+
+    
     function DashboardExploreBranch(){
-        return view('dashboard.explore-branch');
+        
+
+
+    $cookie = $_COOKIE['cookie_user'];
+
+    $selected_branches = DB::select('select distinct(branch_name) from interests inner join userinterestbridges on interests.interest_name = userinterestbridges.interest_name where user_username = ?',[$cookie]);
+   
+    for($i=0; $i<count($selected_branches); $i++){
+        $branch_arr[$i] = $selected_branches[$i]->branch_name;
+
+    }
+    $count=0;
+        for($i=0; $i<count($branch_arr); $i++){
+            $recom_servers[$count]= Server::where('branch_name',$branch_arr[$i])->get('server_tagname');
+            // $serverss = $recom_servers[$count]->get('server_tagname');
+           
+        }
+        return $recom_servers;
+
+        $branches = Branch:: all();
+        $count= 10;
+        $countarr = 0;
+        $serverarr = array();
+        foreach(UserServerBridge::all() as $servers){
+
+            if ($servers->user_username == $cookie)
+            {
+                 $serverarr[$countarr] = $servers->server_tagname;
+                 $countarr++;
+            }
+        }
+        return view('dashboard.explore-branch',compact('serverarr','branches','cookie','recom_servers','selected_branches','recom_servers'));
 
     }
     function DashboardExploreServers(){
