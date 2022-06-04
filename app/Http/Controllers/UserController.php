@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Models\User;
+use App\Models\Server;
+use App\Models\Interest;
 use App\Models\UserInterestBridge;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
@@ -133,7 +135,10 @@ class UserController extends Controller
     public function login(Request $request)
     {
             
-
+            
+        $user_count = User:: all()->count();
+        $server_count = Server:: all()->count();
+        $interests = Interest:: all();
             $user = User::where('user_username',$request->input('user_username'))->get();
 
             if(isset($user[0])){
@@ -143,13 +148,13 @@ class UserController extends Controller
                 }
                 else{
                     $err_login="Wrong Password";
-                    return view('home.landingpage',compact('err_login'));
+                    return view('home.landingpage',compact('err_login','user_count','server_count','interests'));
                 }
             
             }
             else{
                 $err_login="Wrong Username";
-                return view('home.landingpage',compact('err_login'));
+                return view('home.landingpage',compact('err_login','user_count','server_count','interests'));
 
             }
             
